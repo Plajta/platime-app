@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PlajTime" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="android:colorPrimary">?android:colorPrimary</item> <!-- Monet color -->
+        <item name="android:windowSplashScreenBackground">@android:color/system_neutral2_100</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/plajta_dark</item>
+    </style>
+</resources>
