@@ -264,11 +264,11 @@ private fun getCurrentTimeBytes(): ByteArray {
     val year = calendar.get(Calendar.YEAR)
     val month = calendar.get(Calendar.MONTH) + 1  // Months are 0-based in Calendar
     val day = calendar.get(Calendar.DAY_OF_MONTH)
-    val weekday = 4
+    val weekday = calendar.get(Calendar.DAY_OF_WEEK)
     val hours = calendar.get(Calendar.HOUR_OF_DAY)
     val minutes = calendar.get(Calendar.MINUTE)
     val seconds = calendar.get(Calendar.SECOND)
-    val mseconds = 0
+    val mseconds = calendar.get(Calendar.MILLISECOND)
 
     return byteArrayOf(
         (year and 0xFF).toByte(),
