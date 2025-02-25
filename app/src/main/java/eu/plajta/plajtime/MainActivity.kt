@@ -284,7 +284,7 @@ private fun getCurrentTimeBytes(): ByteArray {
         reason.toByte()
     )
 }
- 
+
 
 @Composable
 fun ScanningIndicator(modifier: Modifier = Modifier) {
