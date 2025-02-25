@@ -269,6 +269,7 @@ private fun getCurrentTimeBytes(): ByteArray {
     val minutes = calendar.get(Calendar.MINUTE)
     val seconds = calendar.get(Calendar.SECOND)
     val mseconds = calendar.get(Calendar.MILLISECOND)
+    val reason = 0
 
     return byteArrayOf(
         (year and 0xFF).toByte(),
@@ -279,10 +280,11 @@ private fun getCurrentTimeBytes(): ByteArray {
         minutes.toByte(),
         seconds.toByte(),
         weekday.toByte(),
-        (mseconds and 0xFF).toByte()
+        (mseconds and 0xFF).toByte(),
+        reason.toByte()
     )
 }
-
+ 
 
 @Composable
 fun ScanningIndicator(modifier: Modifier = Modifier) {
